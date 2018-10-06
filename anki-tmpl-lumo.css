@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "font-face-fzmiaowu-uzura";
+  src: url("fzmiaowu-uzura.ttf") format("truetype");
+}
+
 @-webkit-keyframes lumo-fade-in {
   from {
     opacity: .6;
@@ -110,7 +115,7 @@
 
 body, .card, .cloze {
   background: #f4fafd;
-  font-family: "FZMiaoWu-Uzura", "Microsoft YaHei UI Light", "STHeiti Light", "Segoe UI Light",
+  font-family: "font-face-fzmiaowu-uzura", "FZMiaoWu-Uzura", "Microsoft YaHei UI Light", "STHeiti Light", "Segoe UI Light",
   "PingFang SC Light", sans-serif;
   font-size: 26px;
   line-height: 35px;
@@ -123,6 +128,7 @@ body, .card, .cloze {
 .cloze {
   -webkit-border-radius: 7px;
   border-radius: 7px;
+  padding: 1px 3px;
 }
 
 .lumo-footer {
@@ -133,9 +139,9 @@ body, .card, .cloze {
 
 .lumo-content {
   display: inline-block;
-  width: 74%;
+  width: 76%;
   position: relative;
-  margin: 100px 13% 160px;
+  margin: 100px 12% 160px;
 }
 
 .lumo-img-animation {
@@ -152,8 +158,8 @@ body, .card, .cloze {
 }
 
 .lumo-load-animation {
-  -webkit-animation: lumo-fade-in .3s ease-in-out;
-  animation: lumo-fade-in .3s ease-in-out;
+  -webkit-animation: lumo-fade-in .4s ease-in-out;
+  animation: lumo-fade-in .4s ease-in-out;
 }
 
 .lumo-delay-2 {
