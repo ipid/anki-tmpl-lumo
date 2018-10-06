@@ -1,3 +1,5 @@
+/* Resources */
+
 @font-face {
   font-family: "font-face-fzmiaowu-uzura";
   src: url("fzmiaowu-uzura.ttf") format("truetype");
@@ -74,55 +76,74 @@
 .lumo-circle-corner-aqua {
   width: 61px;
   height: 67px;
-  background: url(anki-tmpl-lumo-sprites.png) -259px -111px;
+  background: url(tmpl-lumo-sprites-5ea0844e.png) -259px -113px;
+}
+
+.lumo-circle-corner-green {
+  width: 61px;
+  height: 67px;
+  background: url(tmpl-lumo-sprites-5ea0844e.png) -326px -113px;
 }
 
 .lumo-circle-corner-pink {
   width: 61px;
   height: 67px;
-  background: url(anki-tmpl-lumo-sprites.png) -326px -111px;
+  background: url(tmpl-lumo-sprites-5ea0844e.png) -393px -113px;
 }
 
 .lumo-cross {
   width: 24px;
   height: 24px;
-  background: url(anki-tmpl-lumo-sprites.png) -393px -151px;
+  background: url(tmpl-lumo-sprites-5ea0844e.png) -335px -186px;
 }
 
 .lumo-diamond-green {
   width: 34px;
   height: 34px;
-  background: url(anki-tmpl-lumo-sprites.png) -393px -111px;
+  background: url(tmpl-lumo-sprites-5ea0844e.png) -259px -186px;
 }
 
 .lumo-diamond-orange {
   width: 30px;
   height: 30px;
-  background: url(anki-tmpl-lumo-sprites.png) -433px -111px;
+  background: url(tmpl-lumo-sprites-5ea0844e.png) -299px -186px;
 }
 
 .lumo-shutter-circle {
-  width: 209px;
-  height: 102px;
-  background: url(anki-tmpl-lumo-sprites.png) -259px -3px;
+  width: 204px;
+  height: 104px;
+  background: url(tmpl-lumo-sprites-5ea0844e.png) -259px -3px;
 }
 
 .lumo-triangle {
   width: 250px;
   height: 217px;
-  background: url(anki-tmpl-lumo-sprites.png) -3px -3px;
+  background: url(tmpl-lumo-sprites-5ea0844e.png) -3px -3px;
 }
 
-body, .card, .cloze {
+/* Style of the page */
+
+body, .card, .container, .cloze {
   background: #f4fafd;
-  font-family: "font-face-fzmiaowu-uzura", "FZMiaoWu-Uzura", "Microsoft YaHei UI Light", "STHeiti Light", "Segoe UI Light",
-  "PingFang SC Light", sans-serif;
+  font-family: "FZMiaoWu-Uzura", "font-face-fzmiaowu-uzura", "Microsoft YaHei UI Light", "STHeiti Light",
+  "Segoe UI Light", "PingFang SC Light", sans-serif;
   font-size: 26px;
   line-height: 35px;
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.card, .container {
+  min-height: 100%;
+  height: auto;
 }
 
 .cloze {
@@ -158,8 +179,8 @@ body, .card, .cloze {
 }
 
 .lumo-load-animation {
-  -webkit-animation: lumo-fade-in .4s ease-in-out;
-  animation: lumo-fade-in .4s ease-in-out;
+  -webkit-animation: lumo-fade-in .5s;
+  animation: lumo-fade-in .5s;
 }
 
 .lumo-delay-2 {
@@ -201,8 +222,11 @@ body, .card, .cloze {
   color: #fd8c8c;
 }
 
-.lumo-bar > .lumo-circle-corner-aqua,
-.lumo-bar > .lumo-circle-corner-pink {
+.lumo-bar-green {
+  color: #80c469;
+}
+
+.lumo-bar > i {
   position: absolute;
   top: 0;
   left: 0;
@@ -212,10 +236,12 @@ body, .card, .cloze {
 
 .lumo-bar > .lumo-tag {
   position: absolute;
-  top: 10px;
-  left: 17px;
+  top: 0;
+  left: 0;
+  width: 47px;
+  height: 55px;
+  line-height: 55px;
   color: white;
-  font-weight: bold;
   font-size: 30px;
   text-align: center;
   text-indent: 0;
@@ -243,4 +269,10 @@ body, .card, .cloze {
   position: absolute;
   right: -60px;
   bottom: -152px;
+}
+
+/* AnkiWeb */
+
+div#ansarea {
+  background: transparent;
 }
