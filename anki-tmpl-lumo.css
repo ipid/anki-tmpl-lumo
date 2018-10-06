@@ -1,0 +1,240 @@
+@-webkit-keyframes lumo-fade-in {
+  from {
+    opacity: .6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lumo-fade-in {
+  from {
+    opacity: .6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes lumo-fade-move {
+  from {
+    opacity: 0;
+    margin-top: -7px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes lumo-fade-move {
+  from {
+    opacity: 0;
+    margin-top: -7px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@-webkit-keyframes lumo-circle-move {
+  from {
+    opacity: 0;
+    bottom: -15px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+@keyframes lumo-circle-move {
+  from {
+    opacity: 0;
+    bottom: -15px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+.lumo-circle-corner-aqua, .lumo-circle-corner-pink,
+.lumo-cross, .lumo-diamond-green, .lumo-diamond-orange,
+.lumo-shutter-circle, .lumo-triangle {
+  display: inline-block;
+}
+
+.lumo-circle-corner-aqua {
+  width: 61px;
+  height: 67px;
+  background: url(anki-tmpl-lumo-sprites.png) -259px -111px;
+}
+
+.lumo-circle-corner-pink {
+  width: 61px;
+  height: 67px;
+  background: url(anki-tmpl-lumo-sprites.png) -326px -111px;
+}
+
+.lumo-cross {
+  width: 24px;
+  height: 24px;
+  background: url(anki-tmpl-lumo-sprites.png) -393px -151px;
+}
+
+.lumo-diamond-green {
+  width: 34px;
+  height: 34px;
+  background: url(anki-tmpl-lumo-sprites.png) -393px -111px;
+}
+
+.lumo-diamond-orange {
+  width: 30px;
+  height: 30px;
+  background: url(anki-tmpl-lumo-sprites.png) -433px -111px;
+}
+
+.lumo-shutter-circle {
+  width: 209px;
+  height: 102px;
+  background: url(anki-tmpl-lumo-sprites.png) -259px -3px;
+}
+
+.lumo-triangle {
+  width: 250px;
+  height: 217px;
+  background: url(anki-tmpl-lumo-sprites.png) -3px -3px;
+}
+
+body, .card, .cloze {
+  background: #f4fafd;
+  font-family: "FZMiaoWu-Uzura", "Microsoft YaHei UI Light", "STHeiti Light", "Segoe UI Light",
+  "PingFang SC Light", sans-serif;
+  font-size: 26px;
+  line-height: 35px;
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.cloze {
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+
+.lumo-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.lumo-content {
+  display: inline-block;
+  width: 74%;
+  position: relative;
+  margin: 100px 13% 160px;
+}
+
+.lumo-img-animation {
+  -webkit-animation: lumo-fade-move .2s ease-in forwards;
+  animation: lumo-fade-move .2s ease-in forwards;
+  margin-top: -7px;
+  opacity: 0;
+}
+
+.lumo-footer.lumo-img-animation {
+  -webkit-animation: lumo-circle-move .4s ease-in forwards;
+  animation: lumo-circle-move .4s ease-in forwards;
+  bottom: -15px;
+}
+
+.lumo-load-animation {
+  -webkit-animation: lumo-fade-in .3s ease-in-out;
+  animation: lumo-fade-in .3s ease-in-out;
+}
+
+.lumo-delay-2 {
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+
+.lumo-delay-3 {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
+}
+
+.lumo-delay-4 {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+.lumo-content > div {
+  margin-top: 33px;
+}
+
+.lumo-bar {
+  background: white;
+  padding: 26px 33px 24px 39px;
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+  position: relative;
+  -webkit-box-shadow: 0 6px 22px 0 rgba(157, 195, 237, 0.4);
+  box-shadow: 0 6px 22px 0 rgba(157, 195, 237, 0.4);
+  text-indent: 1.1em;
+  min-height: 30px;
+}
+
+.lumo-bar-aqua {
+  color: #7974d8;
+}
+
+.lumo-bar-pink {
+  color: #fd8c8c;
+}
+
+.lumo-bar > .lumo-circle-corner-aqua,
+.lumo-bar > .lumo-circle-corner-pink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-border-top-left-radius: 13px;
+  border-top-left-radius: 13px;
+}
+
+.lumo-bar > .lumo-tag {
+  position: absolute;
+  top: 10px;
+  left: 17px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  text-indent: 0;
+}
+
+.lumo-content > .lumo-cross {
+  position: absolute;
+  top: -52px;
+  left: -28px;
+}
+
+.lumo-content > .lumo-diamond-orange {
+  position: absolute;
+  top: 201px;
+  left: -66px;
+}
+
+.lumo-content > .lumo-diamond-green {
+  position: absolute;
+  top: -10px;
+  right: -52px;
+}
+
+.lumo-content > .lumo-triangle {
+  position: absolute;
+  right: -60px;
+  bottom: -152px;
+}
